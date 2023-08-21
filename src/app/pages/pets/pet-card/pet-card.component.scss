@@ -1,0 +1,54 @@
+@use 'mixins' as *;
+
+mat-card
+{
+  border-radius: 8px;
+  width: 240px;
+
+  img
+  {
+    width: 240px;
+    height: 196px;
+    object-fit: cover;
+    border: 10px solid white;
+    border-radius: 15px;
+  }
+
+  mat-card-title
+  {
+    color: var(--color-black);
+    letter-spacing: 1px;
+  }
+
+  mat-card-subtitle
+  {
+    font-size: 16px;
+  }
+
+  .address-wrap
+  {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+
+    mat-icon
+    {
+      position: absolute;
+      left: -5px;
+      transform: scale(0.8);
+    }
+
+    span
+    {
+      font-size: 13px;
+      color: var(--color-gray);
+      padding-left: 15px;
+    }
+  }
+
+  @include mobile
+  {
+    width: 180px;
+  }
+}
