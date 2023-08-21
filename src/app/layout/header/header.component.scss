@@ -1,0 +1,25 @@
+.mat-toolbar
+{
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+.logo-wrap
+{
+  display: flex;
+  align-items: center;
+
+  mat-icon
+  {
+    transform: scale(1.25);
+  }
+}
+
+span.title
+{
+  margin-left: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--col-primary);
+}
