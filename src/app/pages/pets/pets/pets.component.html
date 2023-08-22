@@ -1,8 +1,3 @@
 <div class="container">
-  <app-pet-card />
-  <app-pet-card />
-  <app-pet-card />
-  <app-pet-card />
-  <app-pet-card />
-  <app-pet-card />
+  <app-pet-card *ngFor="let pet of pets" [pet]="pet"/>
 </div>
