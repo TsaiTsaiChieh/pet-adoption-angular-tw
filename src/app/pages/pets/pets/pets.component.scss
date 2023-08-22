@@ -1,13 +1,17 @@
 @use 'mixins' as *;
 
-.container {
+.container
+{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   color: var(--col-primary);
   justify-items: center;
   row-gap: 16px;
-  @include mobile {
-  grid-template-columns: repeat(2, 1fr);
- }
+  column-gap: 16px;
+
+  @include mobile
+  {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

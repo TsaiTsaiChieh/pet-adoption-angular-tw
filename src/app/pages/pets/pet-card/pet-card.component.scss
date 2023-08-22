@@ -12,6 +12,10 @@ mat-card
     object-fit: cover;
     border: 10px solid white;
     border-radius: 15px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   mat-card-title
