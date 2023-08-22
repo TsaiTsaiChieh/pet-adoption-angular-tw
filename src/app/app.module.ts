@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { HeaderComponent } from './layout/header/header.component'
 import { PetsComponent } from './pages/pets/pets/pets.component'
 import { PetCardComponent } from './pages/pets/pet-card/pet-card.component'
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { PetCardComponent } from './pages/pets/pet-card/pet-card.component'
     BrowserAnimationsModule,
     HeaderComponent,
     PetCardComponent,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
