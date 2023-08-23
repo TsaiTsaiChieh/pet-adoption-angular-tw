@@ -40,6 +40,9 @@ mat-card
     display: flex;
     align-items: center;
     margin-top: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 
     mat-icon
     {
