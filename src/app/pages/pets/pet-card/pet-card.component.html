@@ -1,11 +1,13 @@
-<mat-card>
-  <img mat-card-image [src]="pet.album_file" [alt]="pet.animal_id">
-  <mat-card-content>
-    <mat-card-title>{{ pet.animal_colour! | petName:pet.animal_kind! }}</mat-card-title>
-    <mat-card-subtitle>{{ pet.animal_sex! | petSex }}&#65292;{{ pet.animal_age! | petAge }}</mat-card-subtitle>
-    <div class="address-wrap">
-      <mat-icon class="primary-icon">location_on</mat-icon>
-      <span>{{pet.shelter_name}}</span>
-    </div>
-  </mat-card-content>
-</mat-card>
+<li>
+  <mat-card>
+    <img mat-card-image [src]="pet.album_file" [alt]="pet.animal_id">
+    <mat-card-content>
+      <mat-card-title>{{ pet.animal_colour! | petName:pet.animal_kind! }}</mat-card-title>
+      <mat-card-subtitle>{{ pet.animal_sex! | petSex }}&#65292;{{ pet.animal_age! | petAge }}</mat-card-subtitle>
+      <div class="address-wrap">
+        <mat-icon class="primary-icon">location_on</mat-icon>
+        <span>{{pet.shelter_name}}</span>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</li>
