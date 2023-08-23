@@ -1,4 +1,6 @@
 <div class="container">
-  <app-banner/>
-  <app-pet-card *ngFor="let pet of pets" [pet]="pet"/>
+  <app-banner />
+  <ul>
+    <app-pet-card *ngFor="let pet of pets" [pet]="pet" />
+  </ul>
 </div>
