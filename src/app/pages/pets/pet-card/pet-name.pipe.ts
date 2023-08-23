@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform } from '@angular/core'
+import { Pipe, PipeTransform, } from '@angular/core'
 /*
  * Pet name transfer
  * Usage:
@@ -7,9 +7,9 @@ import { Pipe, PipeTransform } from '@angular/core'
 @Pipe({
   name: 'petName',
   standalone: true,
-})
+},)
 export class PetNamePipe implements PipeTransform {
-  kindTransform (kind: string): string {
+  kindTransform (kind: string,): string {
     switch (kind) {
       case '狗':
         return '汪'
@@ -19,7 +19,7 @@ export class PetNamePipe implements PipeTransform {
         return kind
     }
   }
-  transform (color: string, kind: string): string {
-    return color.replace('色', '') + this.kindTransform(kind)
+  transform (color: string, kind: string,): string {
+    return color.replace('色', '',) + this.kindTransform(kind,)
   }
 }

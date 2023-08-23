@@ -2,9 +2,10 @@ import { Component, Input, } from '@angular/core'
 import { MatButtonModule, } from '@angular/material/button'
 import { MatCardModule, } from '@angular/material/card'
 import { MatIconModule, } from '@angular/material/icon'
+
+import { PetAgePipe, } from './pet-age.pipe'
 import { PetNamePipe, } from './pet-name.pipe'
 import { PetSexPipe, } from './pet-sex.pipe'
-import { PetAgePipe, } from './pet-age.pipe'
 
 @Component({
   selector: 'app-pet-card',
