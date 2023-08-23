@@ -60,7 +60,8 @@
             "exports": "always",
             "functions": "always"
           }
-        ]
+        ],
+        "comma-spacing": ["error", { "before": false, "after": true }]
       }
     },
     {
