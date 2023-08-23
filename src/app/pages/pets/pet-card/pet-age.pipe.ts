@@ -6,7 +6,7 @@ import { Pipe, PipeTransform, } from '@angular/core'
 },)
 export class PetAgePipe implements PipeTransform {
   
-  transform(age: AnimalAge,): unknown {
+  transform(age: AnimalAge,): string {
     switch (age) {
       case 'ADULT':
         return '成年'
