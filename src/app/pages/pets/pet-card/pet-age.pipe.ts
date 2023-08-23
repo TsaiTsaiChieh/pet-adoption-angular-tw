@@ -5,9 +5,15 @@ import { Pipe, PipeTransform, } from '@angular/core'
   standalone: true,
 },)
 export class PetAgePipe implements PipeTransform {
-
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null
+  
+  transform(age: AnimalAge,): unknown {
+    switch (age) {
+      case 'ADULT':
+        return '成年'
+      case 'CHILD':
+        return '幼年'
+      default:
+        return '未知'
+    }
   }
-
 }
