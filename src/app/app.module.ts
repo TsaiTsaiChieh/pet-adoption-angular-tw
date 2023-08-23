@@ -8,11 +8,13 @@ import { HeaderComponent } from './layout/header/header.component'
 import { PetsComponent } from './pages/pets/pets/pets.component'
 import { PetCardComponent } from './pages/pets/pet-card/pet-card.component'
 import { HttpClientModule } from '@angular/common/http'
+import { PetNamePipe } from './pages/pets/pet-card/pet-name.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
     PetsComponent,
+    PetNamePipe,
   ],
   imports: [
     BrowserModule,
