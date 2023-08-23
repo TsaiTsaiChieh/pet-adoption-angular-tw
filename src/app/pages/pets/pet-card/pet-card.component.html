@@ -1,6 +1,6 @@
 <li>
   <mat-card>
-    <img mat-card-image [src]="pet.album_file" [alt]="pet.animal_id">
+    <img mat-card-image [src]="pet.album_file" [alt]="pet.animal_id" (error)="handleMissingImg($event)">
     <mat-card-content>
       <mat-card-title>{{ pet.animal_colour! | petName:pet.animal_kind! }}</mat-card-title>
       <mat-card-subtitle>{{ pet.animal_sex! | petSex }}&#65292;{{ pet.animal_age! | petAge }}</mat-card-subtitle>

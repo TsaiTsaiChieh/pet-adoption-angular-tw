@@ -23,4 +23,8 @@ export class PetCardComponent implements OnInit{
     this.pet.album_file = this.pet.album_file === '' ? 'assets/imgs/no-pic.webp' : this.pet.album_file
   }
 
+  // HACK: cloud change directive method
+  handleMissingImg(event: Event,) {
+    (event.target as HTMLImageElement).setAttribute('src', '/assets/imgs/no-pic.webp',)
+  }
 }
