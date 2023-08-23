@@ -17,7 +17,12 @@ mat-card
       width: 100%;
     }
   }
-
+  mat-card-content {
+    padding: 0 10px;
+    &:last-child {
+      padding-bottom: 10px;
+    }
+  }
   mat-card-title
   {
     color: var(--color-black);
