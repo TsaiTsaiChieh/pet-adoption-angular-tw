@@ -1,11 +1,15 @@
 @use 'mixins' as *;
 
-
 .container
-{}
-
-ul
 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pets-container
+{
+  max-width: 750px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
@@ -16,6 +20,7 @@ ul
 
   @include mobile
   {
+    max-width: 360px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
