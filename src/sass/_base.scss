@@ -17,7 +17,15 @@
   }
 }
 
+.center
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // icon
-.primary-icon {
+.primary-icon
+{
   color: var(--col-primary);
 }
