@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4500",
-    "build": "ng build --output-path docs --base-href pet-adoption-angular-tw",
+    "build": "ng build --output-path docs --base-href https://tsaitsaichieh.github.io/pet-adoption-angular-tw/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint"
