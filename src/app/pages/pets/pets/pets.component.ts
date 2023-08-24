@@ -3,13 +3,14 @@ import { Component, OnInit, } from '@angular/core'
 import { PetService, } from 'src/app/services/pet.service'
 
 import { BannerComponent, } from '../banner/banner.component'
+import { KindFilterComponent, } from '../kind-filter/kind-filter.component'
 import { PetCardComponent, } from '../pet-card/pet-card.component'
 
 @Component({
   selector: 'app-pets',
   templateUrl: './pets.component.html',
   styleUrls: ['./pets.component.scss',],
-  imports: [CommonModule, PetCardComponent, BannerComponent,],
+  imports: [CommonModule, PetCardComponent, BannerComponent, KindFilterComponent,],
   standalone: true,
 },)
 export class PetsComponent implements OnInit {
