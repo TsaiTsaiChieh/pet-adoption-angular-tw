@@ -12,14 +12,29 @@ import { PetCardComponent, } from '../pet-card/pet-card.component'
   styleUrls: ['./pets.component.scss',],
   imports: [CommonModule, PetCardComponent, BannerComponent, KindFilterComponent,],
   standalone: true,
-},)
+})
 export class PetsComponent implements OnInit {
   pets: Pet[] = []
-  constructor(private service: PetService,) {}
+  // could be updated by child component
+  filter: PetFilterType = {
+    page: 1,
+  }
+  constructor(private service: PetService) {}
 
   ngOnInit(): void {
-    this.service.query({ page: 1, },).subscribe((data,) => {
+    this.service.query(this.filter).subscribe((data) => {
       this.pets = data
-    },)
+    })
+  }
+
+  setKind(kind: AnimalKind) {
+    this.filter.kind = kind
+    this.runQuery() 
+  }
+
+  runQuery() {
+    this.service.query(this.filter).subscribe((data) => {
+      this.pets = data
+    })
   }
 }
