@@ -4,15 +4,15 @@
     <button>Show All</button>
   </div>
   <div class="category-filter">
-    <button>
+    <button (click)="changeKind('貓')">
       <img src="assets/imgs/cat.webp" alt="cat"/>
-      <span>Cat</span>
+      <span >Cat</span>
     </button>
-    <button>
+    <button (click)="changeKind('狗')">
       <img src="assets/imgs/dog.webp" alt="dog"/>
       <span>Dog</span>
     </button>
-    <button>
+    <button (click)="changeKind('其他')">
       <img src="assets/imgs/others.webp" alt="others"/>
       <span>Others</span>
     </button>

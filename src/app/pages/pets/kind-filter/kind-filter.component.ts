@@ -9,6 +9,9 @@ import { Component, EventEmitter, Output, } from '@angular/core'
   styleUrls: ['./kind-filter.component.scss',],
 })
 export class KindFilterComponent {
-
   @Output() query: EventEmitter<AnimalKind> = new EventEmitter<AnimalKind>()
+
+  changeKind (kind: AnimalKind) {
+    this.query.emit(kind)
+  }
 }
