@@ -64,7 +64,7 @@
             "objects": "always",
             "imports": "always",
             "exports": "always",
-            "functions": "always"
+            "functions": "never"
           }
         ],
         "comma-spacing": ["error", { "before": false, "after": true }]
