@@ -1,6 +1,6 @@
 <div class="container center">
   <app-banner />
-  <app-kind-filter />
+  <app-kind-filter (query)="setKind($event)" />
   <div class="pets-container">
     <app-pet-card *ngFor="let pet of pets" [pet]="pet" />
   </div>
