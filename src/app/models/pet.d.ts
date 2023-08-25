@@ -1,7 +1,7 @@
 type AnimalAge = 'ADULT' | 'CHILD' 
 type AnimalSex  = 'N' | 'F' | 'M' 
 type AnimalBody =  'SMALL' | 'MEDIUM' | 'BIG'
-type AnimalKind = '狗' | '貓'
+type AnimalKind = '' | '貓' | '狗' | '其他'
 type Ternary = 'N' | 'F' | 'T'
 type AnimalStatus  = 'OPEN'
 
