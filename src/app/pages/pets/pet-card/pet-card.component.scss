@@ -2,7 +2,7 @@
 
 mat-card
 {
-  border-radius: 8px;
+  border-radius: 10px;
   width: 240px;
 
   img
@@ -11,7 +11,7 @@ mat-card
     height: 196px;
     object-fit: cover;
     border: 10px solid white;
-    border-radius: 15px;
+    border-radius: 16px;
 
     @include mobile {
       width: 100%;
